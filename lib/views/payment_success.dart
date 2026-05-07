@@ -1,5 +1,4 @@
 import 'package:application_sewa_lapangan/views/home_page.dart';
-import 'package:application_sewa_lapangan/views/payment_method.dart';
 import 'package:application_sewa_lapangan/widgets/button.dart';
 import 'package:flutter/material.dart';
 import 'package:from_css_color/from_css_color.dart';
