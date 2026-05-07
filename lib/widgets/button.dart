@@ -8,6 +8,8 @@ class CustomButton extends StatelessWidget {
   final double heightButton;
   final double titleSize;
   final double radiusButton;
+  final Color bgButton;
+  final Color colorText;
 
   const CustomButton({
     super.key, 
@@ -17,6 +19,8 @@ class CustomButton extends StatelessWidget {
     this.heightButton = 50,
     this.titleSize = 16,
     this.radiusButton = 15,
+    this.bgButton = Colors.black,
+    this.colorText = Colors.white,
   });
 
   @override
@@ -27,7 +31,7 @@ class CustomButton extends StatelessWidget {
       child: ElevatedButton(
         onPressed: onPressed,
         style: ElevatedButton.styleFrom( // styleFrom : styling button
-          backgroundColor: Colors.black,
+          backgroundColor: bgButton,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadiusGeometry.circular(radiusButton),
           )
@@ -35,7 +39,7 @@ class CustomButton extends StatelessWidget {
         child: Text(textButton, style: GoogleFonts.poppins(
           fontWeight: FontWeight.w600,
           fontSize: titleSize,
-          color: Colors.white
+          color: colorText
         ))
       ),
     );
